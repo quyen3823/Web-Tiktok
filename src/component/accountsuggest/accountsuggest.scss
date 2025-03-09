@@ -1,0 +1,72 @@
+.acc-suggest {
+
+    p {
+        width: max-content;
+    }
+
+    p.title-acc-sgg {
+        padding: 0 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(255 255 255 / 75%);
+    }
+
+    ul.list-acc {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 16px 0;
+        color: rgb(255 255 255 / 75%);
+
+        li.acc-item {
+            padding: 8px;
+        }
+    }
+
+    .see-all {
+        color: rgb(255, 59, 92);
+        font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+@media screen and (max-width:1023px) {
+    .acc-suggest {
+        p.title-acc-sgg {
+            display: none;
+        }
+
+        ul.list-acc {
+            padding: 0;
+            align-items: center;
+
+            li.acc-item {
+                padding: 5px 0;
+
+                .user-wrapper {
+                    display: block;
+
+                    .img-wrapper {
+                        margin-right: 0;
+                    }
+
+                    .name {
+                        display: none;
+                    }
+
+                    .show-info-acc {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .see-all {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,10 @@
+.hr {
+    margin: 20px 0;
+    height: 1px;
+    width: 100%;
+    background: rgb(255 255 255 / 20%);
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}

@@ -1,0 +1,45 @@
+li.func-li.setting-func {
+    position: relative;
+
+    ul.setting-list {
+        transform: scale(0);
+        transform-origin: top right;
+        transition: all .5s ease;
+        font-size: 16px;
+        width: max-content;
+        position: absolute;
+        top: 149%;
+        right: 0;
+        background: rgba(30, 30, 30);
+        border-radius: 5px;
+        padding: 10px 0;
+
+
+        li.setting-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 10px;
+            font-weight: bold;
+            height: 45px;
+            
+            .icon-setting {
+                font-size: 20px;
+                margin-right: 5px;
+            }
+            
+            .mt-ios {
+                margin-left: 20px;
+                transform: scale(0.5);
+            }
+        }
+
+    }
+}
+
+
+li.func-li.setting-func:hover {
+
+    ul.setting-list {
+        transform: scale(1);
+    }
+}

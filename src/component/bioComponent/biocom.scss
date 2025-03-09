@@ -1,0 +1,265 @@
+.app-container {
+    width: 79vw;
+
+    .grid-right {
+        overflow-y: auto;
+        height: 92vh;
+        padding: 0 24px;
+
+        .grid-right-container {
+            margin: 32px 0;
+
+            .profile {
+                .user-wrapper {
+                    align-items: flex-start;
+
+                    .img-wrapper {
+                        width: 116px;
+                        height: 116px;
+                        min-width: 116px;
+                        min-height: 116px;
+
+                        .avt-acc {
+                            border-radius: 50%;
+                            width: 100%;
+                            height: 100%;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    .name {
+                        width: inherit;
+                        color: rgb(255 255 255);
+
+
+                        .nameIG {
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 38px;
+                            padding-bottom: 4px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            text-align: left;
+                            margin: 0;
+                        }
+
+                        .name-user {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 25px;
+                            text-overflow: ellipsis;
+                            height: 25px;
+                            overflow: hidden;
+                            max-width: 450px;
+                            white-space: nowrap;
+                            display: flex;
+                            margin: 0;
+                            align-items: flex-end;
+
+                        }
+
+
+                        .info-follow {
+                            display: flex;
+                            align-items: center;
+                            padding-bottom: 10px;
+
+
+                            .follower {
+                                display: flex;
+                            }
+
+                            .like_count {
+                                margin-left: 10px;
+                                display: flex;
+                            }
+                        }
+                    }
+
+                    .show-info-acc {
+                        display: none;
+                    }
+
+
+                }
+
+                button.show-action-follow {
+                    border-radius: 4px;
+                    background-color: rgb(255, 59, 92);
+                    width: 197px;
+                    height: 37px;
+                    color: rgb(255, 255, 255);
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 8px;
+                    cursor: pointer;
+                    margin-left: 130px;
+                    margin-top: -40px;
+
+                }
+
+                button.show-action-follow.active {
+                    background-color: rgb(255, 255, 255, 8%);
+                    border: 1px solid rgb(255 255 255);
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .pro2 {
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                margin-top: 22px;
+                color: white;
+
+
+                .pro2-1 {
+                    display: flex;
+
+                    .analyst-wrapper {
+                        display: flex;
+                        align-items: center;
+
+                        .strong-quan {
+                            color: white;
+                            font-size: 18px;
+                        }
+
+                        .title-analyst {
+                            font-weight: 400;
+                            font-size: 14px;
+                            margin-right: 20px;
+                            color: rgb(255, 255, 255, 0.8);
+                        }
+                    }
+
+
+                }
+            }
+
+
+            .user-bio {
+                text-align: left;
+                color: white;
+                /* font-weight: 200; */
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                white-space: pre-line;
+                margin-top: 10px;
+            }
+
+            .tiktok-1rxc7na-DivShareActions {
+                position: absolute;
+                top: 11px;
+                cursor: pointer;
+                right: 52px;
+                display: none;
+            }
+
+
+
+            .list-video {
+                .style-video {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    width: 460px;
+                    height: 44px;
+                    margin-bottom: 8px;
+
+                    .list-cate {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 25px;
+                        position: relative;
+                        display: flex;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        flex: 1 1 0%;
+                        height: 44px;
+                        cursor: pointer;
+                        text-align: center;
+                        color: rgb(255, 255, 255, 0.4);
+
+                        .key-liked-video {
+                            color: rgb(255, 255, 255, 0.4);
+                            padding-right: 2px;
+                            align-self: center;
+                        }
+                    }
+
+                    .list-cate.active {
+                        color: rgb(255, 255, 255);
+                        .key-liked-video {
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+
+                    .outline-cate--bio {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 50%;
+                        height: 3px;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 3px;
+                        bottom: 0;
+                        transition: transform 0.3s ease 0s;
+                        left: 0;
+                    }
+                }
+
+                .grid-row {
+                    margin: -20px 0 10px;
+
+                    .grid-100-6 {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .content-video {
+                            // width: calc(100% / 6);
+                            padding: 0 8px;
+                            margin-bottom: 20px;
+
+                            .video-tiktok {
+                                width: 100%;
+                                height: 256px;
+                                object-fit: cover;
+                                border-radius: 5px;
+                            }
+
+                            .des-video {
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 22px;
+                                color: white;
+
+                                .title-video {
+                                    font-weight: 400;
+                                    margin: 0 5px;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.grid-right::-webkit-scrollbar {
+    display: none;
+}

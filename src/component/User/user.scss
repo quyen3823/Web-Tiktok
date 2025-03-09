@@ -1,0 +1,158 @@
+.user-wrapper {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    position: relative;
+    color: rgb(255 255 255);
+
+    .img-wrapper {
+        margin-right: 12px;
+        width: 32px;
+        height: 32px;
+
+
+        img.avt-acc {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+
+        .nameIG {
+            font-weight: bold;
+            font-size: 16px;
+
+            .tick-blue {
+                color: rgb(32, 213, 236);
+                padding-left: 4px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .name-user {
+            font-size: 12px;
+        }
+    }
+
+
+    .show-info-acc {
+        display: none;
+        width: -webkit-fill-available;
+        height: fit-content;
+        background-color: rgba(50, 50, 50);
+        position: absolute;
+        border-radius: 10px;
+        padding: 15px;
+        z-index: 10;
+        top: 100%;
+        animation: ShowOut 1s ease-out;
+
+        .header-show {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+
+            .img-contain {
+                width: 50px;
+                height: 50px;
+
+                img.avt-acc--show {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            button.show-action-follow {
+                border-radius: 4px;
+                background-color: rgb(255 59 92);
+                width: 106px;
+                height: 37px;
+                color: rgb(255 255 255);
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 600;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 8px;
+                cursor: pointer;
+            }
+
+            button.show-action-follow.active {
+                background-color: rgb(255, 255, 255, 8%);
+                border: 1px solid rgb(255 255 255);
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+
+        .info-container {
+            width: inherit;
+            color: rgb(255 255 255);
+
+
+            .name-show {
+                padding: 10px 0;
+
+                .nick_name {
+                    font-size: 18px;
+                    font-weight: 900;
+                    display: flex;
+                    align-items: center;
+                }
+
+
+                .full_name {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+
+            .info-follow {
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+
+
+                .follower {
+                    display: flex;
+                }
+
+                .like_count {
+                    margin-left: 10px;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+.user-wrapper:hover {
+    .show-info-acc {
+        display: block;
+    }
+}
+
+
+@keyframes ShowOut {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

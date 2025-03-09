@@ -1,0 +1,211 @@
+.video-content {
+    padding: 25px;
+    width: 694px;
+
+    .video-header {
+        display: flex;
+        justify-content: space-between;
+
+        span.video-header--span {
+            max-width: 510px;
+            display: block;
+
+            .user-wrapper {
+                margin-bottom: -27px;
+                align-items: flex-start;
+
+                .img-wrapper {
+                    margin-right: 12px;
+                    width: 56px;
+                    height: 56px;
+
+                    img.avt-acc {
+                        border-radius: 50%;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                }
+
+                .name {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    width: auto;
+
+                    .nameIG {
+                        color: rgb(255 255 255);
+                        font-weight: bolder;
+                        font-size: 18px;
+                        margin-right: 4px;
+                    }
+
+                    .name-user {
+                        align-self: flex-start;
+                        font-size: 14px;
+                        padding-top: 4px;
+                    }
+                }
+            }
+
+        }
+
+
+
+
+    }
+
+    .hashtag-status {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 68px;
+
+
+        .status {
+            padding-top: 2px;
+        }
+
+        .hashtag {
+            font-weight: bold;
+            font-size: 14px;
+            padding: 2px 0 0 3px;
+        }
+
+
+    }
+
+    button.action-follow {
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+        color: rgb(255 59 92);
+        border-color: rgb(255 59 92);
+        background-color: rgb(255 255 255 / 8%);
+        width: 106px;
+        height: 28px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 8px;
+        cursor: pointer;
+
+    }
+
+    button.action-follow:hover {
+        background-color: rgb(255 255 255 / 0%);
+    }
+
+    button.action-follow.active {
+        background-color: rgb(255, 255, 255, 8%);
+        border: 1px solid rgb(255 255 255);
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+    }
+
+    .music-link {
+        margin-left: 67px;
+        padding: 10px 0 5px;
+        display: flex;
+        align-items: center;
+
+        p.org-audio {
+            font-size: 16px;
+            padding-left: 9px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .video-body {  
+        margin-left: 67px;
+        display: flex;
+        justify-content: start;
+
+        video.video-src {
+            max-height: 520px;
+            max-width: 520px;
+            // width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            padding: 0;
+        }
+    }
+    .action-video {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 20px;
+        padding-left: 15px;
+
+        ul.action-list {
+            text-align-last: center;
+
+            li.action-item {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                font-size: 0px;
+                border-radius: 50%;
+                -webkit-transition: all ease-in-out 200ms;
+                transition: all ease-in-out 200ms;
+                background-color: rgb(255 255 255 / 12%);
+                margin-top: 8px;
+                margin-bottom: 6px;
+                text-align: center;
+
+                .icon-action {
+                    font-size: 25px;
+                }
+            }
+
+            .count {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .video-content {
+        padding: 15px 10px;
+
+        .video-header {
+            max-width: 84vw;
+
+        }
+
+        .video-body {
+            margin-left: 67px;
+            display: flex;
+            justify-content: start;
+
+            video.video-src {
+                max-width: 64vw;
+            }
+        }
+    }
+}

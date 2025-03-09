@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;600&family=Roboto:ital,wght@1,300&display=swap');
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: rgb(18 18 18);
+  overflow: hidden;
+}
+
+body {
+  font-size: 14px;
+  color: rgb(255 255 255);
+  background-color: rgb(18, 18, 18);
+  overscroll-behavior: contain;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: rgb(255 255 255 / 90%);
+  margin-bottom: 0;
+}
+
+p.underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  background-color: rgb(255 255 255 / 3%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+a, a:hover {
+  color: rgb(255 255 255);
+  text-decoration: none;
+}
+
+
+svg, svg:hover {
+  color: rgb(255 255 255);
+
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}

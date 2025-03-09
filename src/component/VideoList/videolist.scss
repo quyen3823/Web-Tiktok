@@ -1,0 +1,28 @@
+.video-list {
+    overflow: hidden;
+    height: 92vh;
+
+
+    
+
+}
+
+
+.video-list::-webkit-scrollbar {
+    display: none;
+}
+
+.video-list:hover {
+    overflow: scroll;
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav-main {
+        width: 100%;
+
+        .search-main {
+            display: none;
+        }
+    }
+}
